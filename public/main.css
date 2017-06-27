@@ -1,0 +1,182 @@
+body {
+    padding-top: 110px;
+    padding-bottom: 700px;
+    padding-left: 20px;
+    
+    background-color: #212327;
+    font-family: 'Ubuntu', sans-serif;
+    
+/*
+    background : 
+        linear-gradient( rgba(38, 38, 131, 0.7 ), 
+        rgba(62, 24, 62, 0.8)),
+        url('images/img-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+*/
+    overflow: scroll;
+}
+
+.header-section {
+/*    background-color: rgba(38, 38, 131, 0.75);*/
+    
+    background : 
+        linear-gradient( rgba(3, 139, 209, 0.7), 
+        rgba(6, 136, 136, 0.8)),
+        url('images/img-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+button { 
+    background-color: #13acd9;
+    color: #fff;
+    border: none;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+}
+
+.new-view{ 
+    color: #fff;
+}
+
+.delete { 
+    float: right;
+    background-color: #be3434;
+}
+
+.alb-art { 
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.page-section { 
+    border: none;
+}
+
+.main-title {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-title:hover { 
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav { 
+    width: 500px;
+    margin: 0 auto;
+    background: none;
+    border: none;
+}
+
+.add-button { 
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto; 
+    width: 100px;
+}
+
+.add-button: hover { 
+    text-decoration: none;
+    color: #13acd9;
+}
+
+.main-nav { 
+    
+}
+
+.title-secondary { 
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    color: #13acd9;
+
+}
+
+.artist-card { 
+    transition: all .5s ease;
+    color: #fff;
+}
+
+.artist-card a:hover { 
+    text-decoration: none;
+    
+}
+
+.thumbnail {
+    background-color: #e2e2e2;
+    
+}
+
+.artist-card-name { 
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: #13acd9;
+    text-align: center;
+}
+
+.genre { 
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+.footer-text{ 
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    line-height: 2.5em;
+    color: #9a9a9a;
+}
+
+.artist-view { 
+    color: white;
+}
+
+.artist-view h3 { 
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+
+.footer-section { 
+    background-color: rgb(28, 29, 33);
+    border: none;
+}
+
+.artist:scroll {
+    color: black;
+}
+
+.artist {
+    color: black;
+}
+
+.row {
+    padding-left: 20px;
+}
+
+.min-height {
+    min-height: 300px;
+}
+
+.resized {
+    width: 250px;
+}
+
+.resized-photo {
+    background-size: cover;
+}

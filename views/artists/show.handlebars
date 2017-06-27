@@ -1,0 +1,64 @@
+<div class="artist-view">
+    <div class="row">
+        <div class="page-header">
+            <h1>{{name}}</h1>
+              
+                {{genre}}
+                    <form class="" action="/artists/delete/{{id}}" method="post">
+                      <button class='delete' type="submit" name="delete">Delete</button>
+                    </form>
+                
+            
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <a href="/artists/{{id}}" class="thumbnail alb-art">
+                <img src="{{image}}">
+            </a>
+        </div>
+<!--        <a href="/artists/edit/{{id}}">Edit</a>-->
+    </div>
+    
+    <div class="block">
+        <h3>Songs</h3>
+        <ul style="list-style: none;">
+            {{#each songs}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <h3>Albums</h3>
+        <ul style="list-style: none;">
+            {{#each albums}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="comments">
+        <h3>Comments</h3>
+        {{#each comments }}
+        <div class="comment">
+            <p>
+                {{ comment }}
+                <small>
+            <span>{{ author }}</span>
+            <span>{{date}}</span>
+          </small>
+            </p>
+        </div>
+        {{/each}}
+    </div>
+    
+    <div class="input-group new-comment">
+        <h4>New Comment:</h4>
+        <form action="/artists/{{ id }}" method="post">
+            <p>
+                <label for="author">Author</label>
+                <input style="margin-left: 20px" type="text" name="author" value="">
+            </p>
+            <p>
+                <label for="comment">Comment</label>
+                <textarea name="comment" rows="8" cols="80"></textarea>
+            </p>
+            <button class='buttons' type="submit" name="submit">Submit</button>
+        </form>
+    </div>
+</div>

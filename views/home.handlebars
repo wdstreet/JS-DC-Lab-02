@@ -1,0 +1,16 @@
+<div class="page-header page-section">
+    <p class='title-secondary'>Library</p>
+</div>
+{{#each artists}}
+   
+    <div class="col-xs-6 col-md-3 min-height artist-card">
+        <a href="/artists/{{id}}" class="thumbnail">
+            <img src="{{image}}">
+            <div class="caption">
+                <h3 class='artist-card-name'>{{name}}</h3>
+                <h4 class='genre'>{{genre}}</h4>
+                
+            </div>
+        </a>
+    </div>
+{{/each}}
